@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .main{
     justify-self: center;
     display: flex;
@@ -61,3 +62,54 @@
     width:40px;
     height:30px;
 }
+=======
+  .date {
+    font-size: 10px;
+  }
+  
+  .title {
+    font-size: 18px;
+  }
+  
+  .abstract {
+    font-size: 10px;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    text-align: center;
+    /* background-color: #f1f1f1; */
+    background-color: rgb(255, 255, 255);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 2%;
+    width: 200px;
+  }
+  
+  .container {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .clap {
+    width: 10%;
+  }
+  
+  .heart {
+    width: 10%; 
+    float: right;
+  }
+  
+  .image {
+    width: 100%;
+  }
+  
+  #readTime {
+    float: right;
+  }
+  /*
+  #readTime {
+    float: left;
+  } */
+>>>>>>> 6be48bffc7bbbf05eda7ef6d565bf7d24ba2651e
