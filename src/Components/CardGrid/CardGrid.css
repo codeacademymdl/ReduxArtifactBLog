@@ -1,0 +1,14 @@
+/* .card_grid{
+    display: grid;
+    padding: 40px 80px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px
+} */
+
+.card-grid{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}

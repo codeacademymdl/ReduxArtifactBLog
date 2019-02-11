@@ -1,13 +1,4 @@
-import React, { Component } from 'react';
-import './App.css';
-import Navigation from '../src/Components/Navigation/Navigation';
-import Footer from '../src/Components/Footer/Footer';
-
-import CardGrid from '../src/Components/CardGrid/CardGrid'
-import CreatePost from '../src/Components/CreatePost/CreatePost'
-class App extends Component {
-
-cards= [{
+[{
     "date": "2nd Januray, 2018",
     "readingTime": "2 mins",
     "title": "The future of abstract art and the culture ...",
@@ -56,21 +47,3 @@ cards= [{
     "liked": false,
     "image": "reason.png"
 }]
-
-
-
-
-  render() {
-    return (
-      <div>
-      <Navigation/>
-     <CardGrid cards={this.cards}/>
-      <CreatePost/>
-     <Footer/>
-
-      </div>
-    );
-  }
-}
-
-export default App;
