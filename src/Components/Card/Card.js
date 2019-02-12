@@ -8,29 +8,6 @@ import ClappingImage from '../../Icons/clapping.svg';
 class Card extends Component {
     render() {
         return (
-<<<<<<< HEAD
-            <div className="main" >
-                <div className="backgroundImage" style={{ backgroundImage: `url(${this.props.imageSrc})` }} />
-
-                <div className="imageInfo">
-
-                     <span>{this.props.date}</span><span>{this.props.readingTime}</span>
-                </div>
-                <div className="imageDesc">
-                    <span >{this.props.title}</span>
-                    <span className="imageContent">{this.props.description}</span>
-
-                </div>
-                <div className="imageFooter">
-                    <div className="reaction">
-                        <img src={ClappingImage} />
-                        <span>{this.props.claps}</span>
-                    </div>
-                    {
-                        this.props.liked?<img src={RedHeartImage} /> :<img src={BlackHeartImage} />   
-                    } 
-
-=======
             <div class="card">
                 <img src= {this.props.imageSrc} alt="abstract" className='image' />
                 <div className="container">
@@ -40,8 +17,8 @@ class Card extends Component {
                     <p className='abstract'>{this.props.description}</p>
                     <hr />
                     <img alt="clap" src={ClappingImage} className='clap' />
-                    <img alt="heart" src={RedHeartImage} className='heart' />
->>>>>>> 6be48bffc7bbbf05eda7ef6d565bf7d24ba2651e
+                    <span>{this.props.claps}</span>
+                    {this.props.liked?<img alt="heart" src={RedHeartImage} className='heart' />:<img alt="heart" src={BlackHeartImage} className='heart' />}
                 </div>
             </div>
         );

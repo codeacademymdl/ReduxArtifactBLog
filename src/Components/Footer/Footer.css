@@ -1,8 +1,10 @@
 .footer {
     background: #000;
     color: #fff;
-    position: absolute;
+    position: relative;
     width:100vw;
+    margin-bottom:0;
+    height:30px;
   }
 
   .footer p {

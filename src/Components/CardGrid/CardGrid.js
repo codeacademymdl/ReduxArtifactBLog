@@ -3,12 +3,14 @@ import './CardGrid.css';
 import Card from '../Card/Card'
 
 class CardGrid extends Component {
+
+   
   render() {
     return (
       <div className="card_grid">
         {
           this.props.cards.map((card, index) => {
-            return < Card
+            return <Card
               date = {card.date}
               readingTime = {card.readingTime}
               title = {card.title}
