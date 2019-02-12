@@ -18,6 +18,7 @@ class CardGrid extends Component {
               claps = {card.claps}
               liked = {card.liked}
               imageSrc = {`./Images/${card.image}`}
+              key={index}
             ></Card>
           })
         }

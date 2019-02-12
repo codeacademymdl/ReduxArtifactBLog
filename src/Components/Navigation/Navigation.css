@@ -5,14 +5,26 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    
   }
 
+.heading{
+ margin-left:5%;
 
+
+}
   .nav div h2{
 
     margin-top:-20px;
     font-style: italic;
     font-size:1em;
+  }
+  .navLink{
+
+    width:40%;
+    display:flex;
+    justify-content: space-between;
+    min-width:20%;
   }
   .navLink a {
 
@@ -22,6 +34,6 @@
 
   }
 
-  .navLink a:nth-child(2){
+  /* .navLink a:nth-child(2){
       margin:0 100px;
-  }
+  } */

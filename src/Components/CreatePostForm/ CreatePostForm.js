@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './CreatePostForm.css';
-
+import { Link } from 'react-router-dom';
 
 
 class CreatePostForm extends Component {
@@ -27,7 +27,9 @@ class CreatePostForm extends Component {
                         <textarea rows="6" id="message" placeholder="Enter your message here"></textarea>
                       </li>
                       <li>
+                        <Link to={`/`}>
                         <button type="submit">Submit</button>
+                        </Link>
                       </li>
                     </ul>
           </form>
