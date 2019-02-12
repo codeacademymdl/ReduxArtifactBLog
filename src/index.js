@@ -10,7 +10,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 ReactDOM.render(<Router>
     <div>
-    <Route exact path="/" component={App}></Route>
+        <Route exact path="/" component={App}></Route>
         <Route exact path="/form" component={CreatePostForm}></Route>
     </div>
 </Router>, document.getElementById('root'));

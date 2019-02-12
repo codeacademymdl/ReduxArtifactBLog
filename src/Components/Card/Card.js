@@ -6,7 +6,30 @@ import ClappingImage from '../../Icons/clapping.svg';
 
 
 class Card extends Component {
+
+
+    state={
+        count: this.props.claps,
+        isLike:this.props.liked,
+    }
+
+    Counter=()=>{
+        this.setState({
+            count: this.state.count+1
+        })
+    }
+
+    likeDislike = () =>{
+
+        this.setState({
+            isLike:!this.state.isLike
+        })
+
+    }
+    getImage = () => this.state.isLike ? BlackHeartImage : RedHeartImage;
+
     render() {
+
         return (
             <div class="card">
                 <img src= {this.props.imageSrc} alt="abstract" className='image' />
@@ -16,9 +39,9 @@ class Card extends Component {
                     <p className='title'>{this.props.title}</p>
                     <p className='abstract'>{this.props.description}</p>
                     <hr />
-                    <img alt="clap" src={ClappingImage} className='clap' />
-                    <span>{this.props.claps}</span>
-                    {this.props.liked?<img alt="heart" src={RedHeartImage} className='heart' />:<img alt="heart" src={BlackHeartImage} className='heart' />}
+                    <img alt="clap" src={ClappingImage} className='clap' onClick={this.Counter} />
+                    <span>{this.state.count}</span>
+                    <img alt="" className="heart" src={this.getImage()} onClick={this.likeDislike}/>
                 </div>
             </div>
         );

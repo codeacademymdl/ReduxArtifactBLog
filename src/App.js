@@ -66,17 +66,17 @@ class App extends Component {
 
 	render() {
 		return (
-				<div>
-					<Navigation />
-					<CardGrid cards={this.cards} /> 
-					
-				 <Link to={`/form`}>
-					<CreatePost />
-					</Link>
-					{/* <CardGrid cards={[this.cards[0]]}/> */}
-					<Footer />
+			<div>
+				<Navigation />
+				<CardGrid cards={this.cards} />
 
-				</div>
+				<Link to={`/form`} className="linkBtn">
+					<CreatePost />
+				</Link>
+				{/* <CardGrid cards={[this.cards[0]]}/> */}
+				<Footer />
+
+			</div>
 
 
 
