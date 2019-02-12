@@ -2,12 +2,12 @@ import React from 'react';
 
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
-import Footer from './Footer'
+import CreatePostForm from './ CreatePostForm'
 
-describe('Footer', () => {
+describe('CreatePostForm', () => {
     it('renders correctly', () => {
         const tree = renderer
-          .create(<Footer/>)
+          .create(<CreatePostForm/>)
           .toJSON();
         expect(tree).toMatchSnapshot();
       });

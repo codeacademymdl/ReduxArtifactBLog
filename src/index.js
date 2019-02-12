@@ -4,7 +4,7 @@ import './index.css';
 
 import * as serviceWorker from './serviceWorker';
 
-import Routes from './Components/Routes/Routes';
+import Routes from './Routes/Routes'
 
 ReactDOM.render(<Routes/>, document.getElementById('root'));
 

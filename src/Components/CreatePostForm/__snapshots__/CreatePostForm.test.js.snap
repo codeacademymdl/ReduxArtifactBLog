@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreatePostForm renders correctly 1`] = `
+<form
+  className="form-width"
+>
+  <ul
+    className="flex-outer"
+  >
+    <li>
+      <label
+        for="date-form"
+      >
+        Date
+      </label>
+      <input
+        id="date"
+        type="date"
+      />
+    </li>
+    <li>
+      <label
+        for="read-time"
+      >
+        Read Time
+      </label>
+      <input
+        id="read-time"
+        placeholder="Enter the read time for blog"
+        type="text"
+      />
+    </li>
+    <li>
+      <label
+        for="title"
+      >
+        Title
+      </label>
+      <input
+        id="title"
+        placeholder="Enter the Title of Post"
+        type="text"
+      />
+    </li>
+    <li>
+      <label
+        for="message"
+      >
+        Message
+      </label>
+      <textarea
+        id="message"
+        placeholder="Enter your message here"
+        rows="6"
+      />
+    </li>
+    <li>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <button
+          type="submit"
+        >
+          Submit
+        </button>
+      </a>
+    </li>
+  </ul>
+</form>
+`;

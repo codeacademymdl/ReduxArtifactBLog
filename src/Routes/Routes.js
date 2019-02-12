@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import App from '../../App';
-import CreatePostForm from '../CreatePostForm/ CreatePostForm'
+import App from '../App';
+import CreatePostForm from '../Components/CreatePostForm/ CreatePostForm'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 class Routes extends Component {

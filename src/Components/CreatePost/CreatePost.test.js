@@ -1,17 +1,15 @@
-import React, { Component } from 'react';
-import './CreatePost.css';
-import Card from '../Card/Card'
+import React from 'react';
 
-class CreatePost extends Component {
-  render() {
-    return (
-        <div className="createPost">
-        <button>CreatePost</button>
-            
+import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
+import CreatePost from './CreatePost'
 
-        </div>
-    );
-  }
-}
+describe('CreatePost', () => {
+    it('renders correctly', () => {
+        const tree = renderer
+          .create(<CreatePost/>)
+          .toJSON();
+        expect(tree).toMatchSnapshot();
+      });
+});
 
-export default CreatePost;

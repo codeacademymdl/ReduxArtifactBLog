@@ -2,12 +2,12 @@ import React from 'react';
 
 import { shallow } from 'enzyme';
 import renderer from 'react-test-renderer';
-import Footer from './Footer'
+import Routes from './Routes'
 
-describe('Footer', () => {
+describe('Routes', () => {
     it('renders correctly', () => {
         const tree = renderer
-          .create(<Footer/>)
+          .create(<Routes />)
           .toJSON();
         expect(tree).toMatchSnapshot();
       });

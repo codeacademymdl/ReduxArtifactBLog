@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Routes renders correctly 1`] = `
+<div>
+  <div>
+    <div
+      className="nav"
+    >
+      <div
+        className="heading"
+      >
+        <h1>
+          The Artifact
+        </h1>
+        <h2>
+          Culture & Art Blog
+        </h2>
+      </div>
+      <div
+        className="navLink"
+      >
+        <a
+          href="#!"
+        >
+          Blog
+        </a>
+        <a
+          href="#!"
+        >
+          About
+        </a>
+        <a
+          href="#!"
+        >
+          Contact
+        </a>
+      </div>
+    </div>
+    <div
+      className="card_grid"
+    />
+    <a
+      className="linkBtn"
+      href="/form"
+      onClick={[Function]}
+    >
+      <div
+        className="createPost"
+      >
+        <button
+          className="button"
+        >
+          CreatePost
+        </button>
+      </div>
+    </a>
+    <footer
+      className="footer"
+    >
+      <p>
+        ©artifact.com 2019
+      </p>
+    </footer>
+  </div>
+</div>
+`;
