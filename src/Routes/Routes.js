@@ -8,10 +8,14 @@ class Routes extends Component {
         return (
             <Router>
             <div>
-                <Route exact path="/" component={App}></Route>
-                <Route exact path="/form" component={CreatePostForm}></Route>
+                
+
+                    <Route exact path="/" component={App}></Route>
+                    <Route exact path="/form" component={CreatePostForm}></Route>
+
+                
             </div>
-        </Router>
+            </Router>
         );
     }
 }

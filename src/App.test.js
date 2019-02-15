@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import { shallow } from 'enzyme';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 xit('renders without crashing', () => {
   const div = document.createElement('div');
@@ -11,7 +12,7 @@ xit('renders without crashing', () => {
 
 
 it('checks if data is empty array', () => {
-    const wrapper = shallow(<App />);
+    const wrapper = shallow(<App/>);
     
     
     expect(wrapper.instance().state.cards.length).toEqual(0);

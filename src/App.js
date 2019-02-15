@@ -11,9 +11,6 @@ import CreatePost from './Components/CreatePost/CreatePost';
 // import cards from './mockData/index.json'
 import axios from 'axios'
 
-
-
-
 class App extends Component {
 
     state = {
@@ -36,14 +33,10 @@ class App extends Component {
             <div>
                 <Navigation />
                 <CardGrid cards={this.state.cards} />
-                <Router>
+
                     <Link to={`/form`} className="linkBtn">
                         <CreatePost />
                     </Link>
-
-
-                </Router>
-
 
 
                 {/* <CardGrid cards={[this.cards[0]]}/> */}

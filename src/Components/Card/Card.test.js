@@ -21,8 +21,6 @@ describe('Card', () => {
         expect(tree).toMatchSnapshot();
     });
 
-
-
 });
 
 describe('Card Counter', () => {

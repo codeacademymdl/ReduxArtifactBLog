@@ -2,7 +2,9 @@
 
 exports[`CreatePostForm renders correctly 1`] = `
 <form
+  action="http://localhost:8080/blog"
   className="form-width"
+  method="POST"
 >
   <ul
     className="flex-outer"
@@ -14,7 +16,7 @@ exports[`CreatePostForm renders correctly 1`] = `
         Date
       </label>
       <input
-        id="date"
+        name="date"
         type="date"
       />
     </li>
@@ -25,7 +27,7 @@ exports[`CreatePostForm renders correctly 1`] = `
         Read Time
       </label>
       <input
-        id="read-time"
+        name="read-time"
         placeholder="Enter the read time for blog"
         type="text"
       />
@@ -37,7 +39,7 @@ exports[`CreatePostForm renders correctly 1`] = `
         Title
       </label>
       <input
-        id="title"
+        name="title"
         placeholder="Enter the Title of Post"
         type="text"
       />
@@ -49,22 +51,17 @@ exports[`CreatePostForm renders correctly 1`] = `
         Message
       </label>
       <textarea
-        id="message"
+        name="message"
         placeholder="Enter your message here"
         rows="6"
       />
     </li>
     <li>
-      <a
-        href="/"
-        onClick={[Function]}
+      <button
+        type="submit"
       >
-        <button
-          type="submit"
-        >
-          Submit
-        </button>
-      </a>
+        Submit
+      </button>
     </li>
   </ul>
 </form>
