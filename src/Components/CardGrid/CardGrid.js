@@ -6,9 +6,11 @@ class CardGrid extends Component {
 
    
   render() {
+    console.log("inside card",    this.props.cards );
     return (
       <div className="card_grid">
         {
+            
           this.props.cards.map((card, index) => {
             return <Card
               date = {card.date}

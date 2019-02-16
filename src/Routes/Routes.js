@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import App from '../App';
 import CreatePostForm from '../Components/CreatePostForm/ CreatePostForm'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+import AddCardContainer from '../Container/addCard.container';
 
 class Routes extends Component {
     render() {
@@ -10,7 +11,7 @@ class Routes extends Component {
             <div>
                 
 
-                    <Route exact path="/" component={App}></Route>
+                    <Route exact path="/" component={AddCardContainer}></Route>
                     <Route exact path="/form" component={CreatePostForm}></Route>
 
                 

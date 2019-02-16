@@ -19,13 +19,13 @@ it('checks if data is empty array', () => {
 
   });
 
-    it('checks if data is fetched and assigned to cards', async (done) => {
+it('checks if data is fetched and assigned to cards', async (done) => {
         const wrapper = shallow(<App />);
         
         await wrapper.instance().componentDidMount();
         expect(wrapper.instance().state.cards.length).toEqual(6);
         done();
 
-      });
+    });
 
   
