@@ -1,6 +1,6 @@
 const addCard = (state = [], action) => {
     switch(action.type) {
-        case 'addCard':
+        case 'ADD_BLOG':
           return state.concat([action.payload]);
         case 'ADD_CARDS':
           return state.concat(action.payload);

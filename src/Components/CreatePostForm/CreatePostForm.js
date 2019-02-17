@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './CreatePostForm.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import axios from 'axios';
+// import AddCardContainer from '../../Container/addCard.container'
 
 
 
@@ -12,7 +13,7 @@ class CreatePostForm extends Component {
         date: "",
         readtime: "",
         title: "",
-        message: "",
+        description: "",
 
     }
 
@@ -24,18 +25,28 @@ class CreatePostForm extends Component {
 
     }
 
-    postForm = (e) => {
+    // postForm = (e) => {
+    //     e.preventDefault();
+
+    //     const payload = this.state;
+    //     console.log(payload)
+
+    //     axios.post('http://localhost:8080/blog', payload
+    //     ).then(response => console.log(response));
+    // }
+   postForm = (e) => {
         e.preventDefault();
 
         const payload = this.state;
-        console.log(payload)
+        console.log(payload);
 
-        axios.post('http://localhost:8080/blog', payload
-        ).then(response => console.log(response));
+        this.props.insertCard(payload);
     }
+    
 
 
     render() {
+        console.log(this.props)
         return (
 
             <form className="form-width" onSubmit={this.postForm}>
@@ -53,9 +64,16 @@ class CreatePostForm extends Component {
                         <input type="text" name="title" onChange={this.formDataContent} placeholder="Enter the Title of Post" />
                     </li>
                     <li>
+                        <label >Description</label>
+                        <input type="text" name="description" onChange={this.formDataContent} placeholder="Enter the Description of Post" />
+                    </li>
+                    
+                    
+                    {/* <li>
                         <label >Message</label>
                         <textarea rows="6" name="message" onChange={this.formDataContent} placeholder="Enter your message here"></textarea>
-                    </li>
+                    </li> */}
+                    
                     <li>
 
 
